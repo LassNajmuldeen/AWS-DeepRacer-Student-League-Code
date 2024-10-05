@@ -1,0 +1,39 @@
+import math
+
+def reward_function(params):
+    # Extract parameters
+    all_wheels_on_track = params['all_wheels_on_track']
+    distance_from_center = params['distance_from_center']
+    track_width = params['track_width']
+    speed = params['speed']
+    heading = params['heading']
+    waypoints = params['waypoints']
+    closest_waypoints = params['closest_waypoints']
+
+    # Initialize reward
+    reward = 1.0
+
+    # Penalize if off-track
+    if not all_wheels_on_track:
+        return 1e-3  # Minimal reward if off track
+
+    # Reward for staying near the centerline
+    track_center_bonus = 0.8 * (1.0 - (distance_from_center / (track_width / 2)))
+
+    # Calculate track direction
+    next_wp = waypoints[closest_waypoints[1]]
+    prev_wp = waypoints[closest_waypoints[0]]
+    track_direction = math.degrees(math.atan2(next_wp[1] - prev_wp[1], next_wp[0] - prev_wp[0]))
+
+    # Penalize for deviation in heading
+    heading_diff = abs(track_direction - heading)
+    heading_penalty = max(1 - (heading_diff / 10), 0.0)
+
+    # Reward for speed (up to 1.0 m/s)
+    speed_target = 1.0  # m/s
+    speed_bonus = (speed / speed_target) if speed <= speed_target else 1.0
+
+    # Combine rewards with focus on speed and heading accuracy
+    reward = track_center_bonus * 1.1 + heading_penalty * 1.5 + speed_bonus * 2.5
+
+    return float(reward)
