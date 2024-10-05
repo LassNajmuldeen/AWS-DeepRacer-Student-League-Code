@@ -31,8 +31,6 @@ The AWS DeepRacer Student League provides an exciting platform to explore reinfo
 
 **🛠️ How to Use**
 
-To use this code in your AWS DeepRacer environment:
-
   1. Upload the PPO model configuration to your AWS DeepRacer console.
   2. Train the model on the American Hills Speedway track or any other track of your choice.
   3. Fine-tune based on your track's specific challenges and test your model in the simulator.
