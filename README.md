@@ -12,8 +12,6 @@ The AWS DeepRacer Student League provides an exciting platform to explore reinfo
 
 **⚙️ Reward Function Logic**
 
-Reward Function Highlights:
-
  - If the car goes off track, it receives a minimal reward.
  - Encourages the car to stay near the centerline of the track.
  - Penalizes significant deviation from the track’s direction.
