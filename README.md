@@ -7,7 +7,7 @@ Welcome to my AWS DeepRacer Student League repository! This repo contains the cu
 
 **🚀 Project Overview**
 
-The AWS DeepRacer Student League provides an exciting platform to explore reinforcement learning in autonomous driving. For this project, I focused on optimizing a reward function that balances speed, track direction, and position on the track to achieve maximum performance. I successfully achieved a lap time of 01:11.789 with only 3h of training, ranking me #1 in Sweden.
+The AWS DeepRacer Student League provides an exciting platform to explore reinforcement learning in autonomous driving. For this project, I focused on optimizing a reward function that balances speed, track direction, and position on the track to achieve maximum performance. I successfully achieved a lap time of 01:11.789, ranking me #1 in Sweden.
 
 
 **Reward Function Logic**
@@ -20,7 +20,7 @@ The AWS DeepRacer Student League provides an exciting platform to explore reinfo
 **Results and Achievements**
 
  - Achieved the fastest time on the American Hills Speedway track for the AWS DeepRacer Student League.
- - Ranked #1 in Sweden, 43rd in the EU, and 408th globally even with minimal training.
+ - Ranked #1 in Sweden and 43rd in the EU even with minimal training.
  - Qualified for the Udacity AI & ML Nanodegree scholarship application.
 
 **Learning Outcomes**
