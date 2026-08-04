@@ -21,7 +21,7 @@ The AWS DeepRacer Student League provides an exciting platform to explore reinfo
 
  - Achieved the fastest time on the American Hills Speedway track for the AWS DeepRacer Student League.
  - Ranked #1 in Sweden and 43rd in the EU even with minimal training.
- - Qualified for the Udacity AI & ML Nanodegree scholarship application.
+ - Qualified and received for the Udacity AI & ML Nanodegree scholarship valued at $9k.
 
 **Learning Outcomes**
 
