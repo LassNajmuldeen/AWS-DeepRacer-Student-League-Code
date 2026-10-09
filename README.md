@@ -1,7 +1,12 @@
 # AWS DeepRacer Student League
 
-My custom reward function for the AWS DeepRacer Student League. It rewards speed, staying near the centerline, and following the track direction, with a penalty for going off track.
+A reinforcement learning (RL) reward function I built for the AWS DeepRacer Student League.
+
+I found that the car could maintain the student league's maximum speed of 1.0 m/s throughout the track, so I gave speed the largest weight in the reward function.
+
+- **Speed:** reward increases up to the maximum speed.
+- **Heading:** reward alignment with the track direction, calculated from nearby waypoints.
+- **Position:** reward staying near the centerline, decreasing with distance from it.
+- **Off track:** return a minimal reward immediately.
 
 Ranked first in Sweden and top 50 in the EU twice. Received an Udacity AI & ML Nanodegree ($9000) scholarship.
-
-Copy `reward_function` from [Optimization Code](Optimization%20Code) into the AWS DeepRacer reward function editor.
